@@ -102,7 +102,7 @@ pytest
 
 ---
 
-## 👨‍💻 Author
+## 👨💻 Author
 
 Made by Hmoad Hajali AKA [DesertBlume](https://github.com/DesertBlume)
 
@@ -111,7 +111,3 @@ Made by Hmoad Hajali AKA [DesertBlume](https://github.com/DesertBlume)
 ## 🗝 License
 
 MIT — free to use, hack, and evolve.
-
-
-
-
