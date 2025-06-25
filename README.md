@@ -1,12 +1,12 @@
-# brainctl 🧠⚙️
+# brainctl
 ```
 **brainctl** is a modular automation framework designed to orchestrate infrastructure provisioning, validation, and scoring — all driven by natural language.
 
 At its core, brainctl connects three powerful layers:
 
-- 🧠 **Rick's Brain**: A natural language interface that receives questions or commands and routes them to appropriate skills.
-- ⚙️ **Worker Rick**: A backend logic engine that executes skills like semantic search, summarization, and deployment coordination.
-- 🚀 **Infrastructure Pipeline**:
+- **Rick's Brain**: A natural language interface that receives questions or commands and routes them to appropriate skills.
+- **Worker Rick**: A backend logic engine that executes skills like semantic search, summarization, and deployment coordination.
+- **Infrastructure Pipeline**:
   - **Ansible**: For deploying and configuring services
   - **Go Validator**: For testing and validating infrastructure state
   - **Scoring**: For quantifying and analyzing validation output
@@ -15,7 +15,7 @@ All of this is triggered and coordinated through a chatbot interface, making Dev
 
 
 ```
-## 📦 Project Structure
+## Project Structure
 
 ```
 
@@ -39,7 +39,7 @@ brainctl/
 
 ---
 
-## 💡 Example Skills
+## Example Skills
 
 - `search:` – Semantic search through local notes or knowledge base
 - `summarize:` – Text summarization for large outputs
@@ -49,7 +49,7 @@ brainctl/
 
 ---
 
-## 🛠 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repo
@@ -70,7 +70,7 @@ python3 rick_brain/main.py
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Generate unit tests for new skills
@@ -82,7 +82,7 @@ pytest
 
 ---
 
-## 🛡️ Project Philosophy
+## Project Philosophy
 
 > Infrastructure should listen before it acts.
 
@@ -90,7 +90,7 @@ pytest
 
 ---
 
-## 📍 Roadmap
+## Roadmap
 
 * [x] Natural language routing (`Rick's Brain`)
 * [x] Modular skill system (`Worker Rick`)
@@ -102,12 +102,12 @@ pytest
 
 ---
 
-## 👨💻 Author
+## Author
 
 Made by Hmoad Hajali AKA [DesertBlume](https://github.com/DesertBlume)
 
 ---
 
-## 🗝 License
+## License
 
 MIT — free to use, hack, and evolve.
