@@ -1,10 +1,5 @@
-Absolutely — here's a clean, professional `README.md` for **`brainctl`**, describing your modular, Rick-powered automation system:
-
----
-
-```markdown
 # brainctl 🧠⚙️
-
+```
 **brainctl** is a modular automation framework designed to orchestrate infrastructure provisioning, validation, and scoring — all driven by natural language.
 
 At its core, brainctl connects three powerful layers:
@@ -18,11 +13,6 @@ At its core, brainctl connects three powerful layers:
 
 All of this is triggered and coordinated through a chatbot interface, making DevOps more human and intelligent.
 
----
-
-Absolutely — here’s your cleaned-up, properly formatted **Project Structure** section in Markdown code block format, ready for the `README.md`:
-
----
 
 ```
 ## 📦 Project Structure
@@ -114,7 +104,7 @@ pytest
 
 ## 👨‍💻 Author
 
-Made with 🧠 by [DesertBlume](https://github.com/DesertBlume)
+Made by Hmoad Hajali AKA [DesertBlume](https://github.com/DesertBlume)
 
 ---
 
@@ -123,7 +113,5 @@ Made with 🧠 by [DesertBlume](https://github.com/DesertBlume)
 MIT — free to use, hack, and evolve.
 
 ```
-
----
 
 
