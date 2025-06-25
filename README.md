@@ -20,25 +20,32 @@ All of this is triggered and coordinated through a chatbot interface, making Dev
 
 ---
 
+Absolutely — here’s your cleaned-up, properly formatted **Project Structure** section in Markdown code block format, ready for the `README.md`:
+
+---
+
+```
 ## 📦 Project Structure
 
 ```
 
 brainctl/
-├── rick\_brain/           # Entry point and chatbot interface
-│   ├── main.py           # CLI frontend
-│   ├── router.py         # Routes requests to Worker Rick
-│   ├── config.py         # Project-wide configuration
-│   └── worker\_rick/      # Skill engine
-│       ├── core.py       # Dispatcher and skill loader
-│       └── skills/       # Pluggable skill modules
-├── ansible/              # Playbooks and roles for provisioning
-├── go\_validator/         # Go app for infrastructure validation
-├── tests/                # Unit tests for all skills
-├── generate\_tests.py     # Script to autogenerate skill tests
-└── .pre-commit-config.yaml # Auto-run test generation on commit
+├── rick\_brain/              # Entry point and chatbot interface
+│   ├── main.py              # CLI frontend
+│   ├── router.py            # Routes requests to Worker Rick
+│   ├── config.py            # Project-wide configuration
+│   └── worker\_rick/         # Skill engine
+│       ├── core.py          # Dispatcher and skill loader
+│       └── skills/          # Pluggable skill modules (search, summarize, etc.)
+├── ansible/                 # Playbooks and roles for provisioning
+├── go\_validator/            # Go app for infrastructure validation and scoring
+├── tests/                   # Unit tests for all skills
+├── generate\_tests.py        # Script to autogenerate skill tests
+├── .pre-commit-config.yaml  # Auto-run test generation on commit
+└── requirements.txt         # Python dependencies (in project root)
 
-````
+```
+
 
 ---
 
@@ -119,6 +126,4 @@ MIT — free to use, hack, and evolve.
 
 ---
 
-Would you like this saved to a file now, or do you want to tweak any part of the tone, style, or detail first?
-```
 
