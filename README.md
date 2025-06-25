@@ -20,17 +20,17 @@ All of this is triggered and coordinated through a chatbot interface, making Dev
 ```
 
 brainctl/
-├── rick\_brain/              # Entry point and chatbot interface
+├── rick_brain/              # Entry point and chatbot interface
 │   ├── main.py              # CLI frontend
 │   ├── router.py            # Routes requests to Worker Rick
 │   ├── config.py            # Project-wide configuration
-│   └── worker\_rick/         # Skill engine
+│   └── worker_rick/         # Skill engine
 │       ├── core.py          # Dispatcher and skill loader
 │       └── skills/          # Pluggable skill modules (search, summarize, etc.)
 ├── ansible/                 # Playbooks and roles for provisioning
-├── go\_validator/            # Go app for infrastructure validation and scoring
+├── go_validator/            # Go app for infrastructure validation and scoring
 ├── tests/                   # Unit tests for all skills
-├── generate\_tests.py        # Script to autogenerate skill tests
+├── generate_tests.py        # Script to autogenerate skill tests
 ├── .pre-commit-config.yaml  # Auto-run test generation on commit
 └── requirements.txt         # Python dependencies (in project root)
 
@@ -112,6 +112,6 @@ Made by Hmoad Hajali AKA [DesertBlume](https://github.com/DesertBlume)
 
 MIT — free to use, hack, and evolve.
 
-```
+
 
 
