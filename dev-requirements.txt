@@ -1,0 +1,14 @@
+pytest
+pre_commit
+virtualenv
+setuptools
+pluggy
+packaging
+iniconfig
+nodeenv
+cfgv
+identify
+filelock
+platformdirs
+distlib
+

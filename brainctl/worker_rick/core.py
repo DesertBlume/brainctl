@@ -1,12 +1,10 @@
-# worker_rick/core.py
-
-from path_bootstrap import boost_imports
-boost_imports()
+# brainctl/worker_rick/core.py
 
 import importlib
 import os
 from pathlib import Path
-from rick_brain.config import SKILLS_PATH
+
+from brainctl.config import SKILLS_PATH  # ✅ Updated for new structure
 
 class SkillRegistry:
     _registry = {}
@@ -20,7 +18,7 @@ class SkillRegistry:
             if file.endswith(".py") and file != "__init__.py":
                 skill_name = file[:-3]
                 try:
-                    module = importlib.import_module(f"rick_brain.worker_rick.skills.{skill_name}")
+                    module = importlib.import_module(f"brainctl.worker_rick.skills.{skill_name}")
                     if hasattr(module, "handle"):
                         cls._registry[skill_name] = module.handle
                         print(f"✅ Registered skill: '{skill_name}'")

@@ -1,11 +1,8 @@
-# rick_brain/main.py
+# brainctl/main.py
 
-from path_bootstrap import boost_imports
-boost_imports()
-
-from rick_brain import config  # Ensures brainctl/ is in sys.path
-from rick_brain.router import forward_question
-from worker_rick.core import SkillRegistry
+from brainctl import config  # Just to ensure config loads, if needed
+from brainctl.router import forward_question
+from brainctl.worker_rick.core import SkillRegistry
 
 def main():
     print("🔧 Loading skills...")

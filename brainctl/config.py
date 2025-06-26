@@ -1,14 +1,15 @@
-# rick_brain/config.py
+# brainctl/config.py
 
 import sys
 from pathlib import Path
 
-# Ensure brainctl/ root is in the import path
+# Ensure project root is in sys.path
 project_root = Path(__file__).resolve().parent.parent
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
-# Useful paths
-SKILLS_PATH = project_root / "rick_brain" / "worker_rick" / "skills"
-TESTS_PATH = project_root / "tests"
+# Centralized paths
+SRC_PATH = project_root / "brainctl"
+SKILLS_PATH = SRC_PATH / "worker_rick" / "skills"
+TESTS_PATH = SRC_PATH / "tests"
 

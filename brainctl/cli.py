@@ -1,8 +1,20 @@
-# brainctl.py
+# brainctl/cli.py
+
+"""
+CLI entry point for brainctl.
+
+Usage examples:
+    $ brainctl start
+    $ brainctl validate
+    $ brainctl
+
+If no arguments are passed, you'll be prompted interactively.
+"""
 
 import argparse
 import sys
-from rick_brain import main as rick_main
+from brainctl import main as rick_main
+
 
 def start_rick():
     rick_main.main()
@@ -18,14 +30,6 @@ def score():
 
 def interactive_menu():
     print("\n🧠 Welcome to brainctl!")
-    print("What would you like to do?\n")
-    print("1) Start Rick")
-    print("2) Validate Infrastructure")
-    print("3) Push Config")
-    print("4) Score Results")
-    print("0) Exit")
-
-    choice = input("\nEnter your choice: ").strip()
 
     action_map = {
         "1": start_rick,
@@ -35,15 +39,27 @@ def interactive_menu():
         "0": lambda: sys.exit(0)
     }
 
-    action = action_map.get(choice)
-    if action:
-        action()
-    else:
-        print("❌ Invalid choice.")
-        interactive_menu()
+    while True:
+        print("\nWhat would you like to do?\n")
+        print("1) Start Rick")
+        print("2) Validate Infrastructure")
+        print("3) Push Config")
+        print("4) Score Results")
+        print("0) Exit")
+
+        choice = input("\nEnter your choice: ").strip()
+        action = action_map.get(choice)
+
+        if action:
+            return action()
+        else:
+            print("❌ Invalid choice. Please try again.")
 
 def run():
-    parser = argparse.ArgumentParser(prog="brainctl", description="Rick-powered infrastructure automation CLI.")
+    parser = argparse.ArgumentParser(
+        prog="brainctl",
+        description="Rick-powered infrastructure automation CLI."
+    )
     subparsers = parser.add_subparsers(dest="command")
 
     subparsers.add_parser("start", help="Start Rick's Brain chatbot")
@@ -53,16 +69,18 @@ def run():
 
     args = parser.parse_args()
 
-    if args.command == "start":
-        start_rick()
-    elif args.command == "validate":
-        validate()
-    elif args.command == "push":
-        push_config()
-    elif args.command == "score":
-        score()
+    command_map = {
+        "start": start_rick,
+        "validate": validate,
+        "push": push_config,
+        "score": score,
+    }
+
+    if args.command in command_map:
+        command_map[args.command]()
     else:
         interactive_menu()
+
 
 if __name__ == "__main__":
     run()
