@@ -13,3 +13,6 @@ SRC_PATH = project_root / "brainctl"
 SKILLS_PATH = SRC_PATH / "worker_rick" / "skills"
 TESTS_PATH = SRC_PATH / "tests"
 
+# Default values (overridden at runtime)
+USE_REMOTE_RICK = False
+REMOTE_RICK_URL = None

@@ -12,3 +12,4 @@ filelock
 platformdirs
 distlib
 
+flask
