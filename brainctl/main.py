@@ -5,7 +5,7 @@ boost_imports()
 
 from rick_brain import config  # Ensures brainctl/ is in sys.path
 from rick_brain.router import forward_question
-from rick_brain.worker_rick.core import SkillRegistry
+from worker_rick.core import SkillRegistry
 
 def main():
     print("🔧 Loading skills...")
