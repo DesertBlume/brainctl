@@ -1,8 +1,7 @@
 # rick_brain/router.py
 
-from worker_rick.core import handle_question
+from rick_brain.worker_rick.core import SkillRegistry
 
 def forward_question(question: str) -> str:
-    # Add more routing logic later (e.g., skill detection)
-    return handle_question(question)
+    return SkillRegistry.handle_question(question)
 
