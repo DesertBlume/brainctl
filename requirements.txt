@@ -4,4 +4,4 @@ requests
 sentence-transformers
 torch
 faiss-cpu
-
+duckduckgo-search
